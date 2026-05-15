@@ -24,7 +24,7 @@ export default function App() {
         }
 
         try {
-          const res = await fetch('/api/salvar-localizacao', {
+          const res = await fetch('http://44.200.154.5:8080/api/salvar-localizacao', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(entry),
@@ -59,7 +59,7 @@ export default function App() {
   return (
     <div className="card">
       <div className="header">
-        <div className="icon-wrap">📍</div>
+        <div className="icon-wrap"></div>
         <div>
           <h1>Ver chave aleatoria</h1>
          </div>
