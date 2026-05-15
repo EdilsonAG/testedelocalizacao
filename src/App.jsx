@@ -24,7 +24,7 @@ export default function App() {
         }
 
         try {
-          const res = await fetch('http://44.200.154.5:8080/api/salvar-localizacao', {
+          const res = await fetch('localizacao-103035760.us-east-1.elb.amazonaws.com/api/salvar-localizacao', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(entry),
